@@ -22,7 +22,7 @@ int index_load(Index *index) {
         char hash_hex[65];
         char path_buf[256];
 
-        int ret = fscanf(f, "%o %64s %u %255s",
+        int ret = fscanf(f, "%o %64s %  u %255s",
                          &temp.mode,
                          hash_hex,
                          &temp.size,
